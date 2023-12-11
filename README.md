@@ -1,1 +1,5 @@
-# Advance_AI
+# Contextual_Combinatorial_Cascading_Bandits
+
+### Advance Topics in Artificial Intelligence
+
+The paper "Contextual Combinatorial Cascading Bandits" proposes a new algorithm called C3-UCB for the contextual combinatorial cascading bandits problem. This setting involves recommending a sequential list of items to users under uncertainty, while incorporating user/item features as context and allowing variable feedback. Specifically, the user browses the list top-down, stopping at the first satisfactory item, and the system only observes feedback on items above the stop position. The C3-UCB algorithm balances exploration and exploitation to maximize cumulative reward over time. Key aspects include constructing upper confidence bounds for item weights using ridge regression, and using an approximation oracle to select good item lists. Experiments on synthetic and real-world datasets demonstrate C3-UCB's advantage in exploiting context and handling cascading feedback with position discounts compared to prior methods. The algorithm has potential for applications like search and recommendation. Key open questions include deriving regret lower bounds and extending the cascading model to general graphs.
